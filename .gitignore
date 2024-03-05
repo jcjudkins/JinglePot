@@ -163,6 +163,10 @@ cython_debug/
 
 docker-compose.yml
 docker-compose.dev.yml
+docker-compose.prod.yml
+.DS_Store
+db.sqlite3
+
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
