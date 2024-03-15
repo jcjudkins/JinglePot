@@ -10,7 +10,10 @@ RUN mkdir -p /code
 WORKDIR /code
 
 COPY requirements.txt /tmp/requirements.txt
-RUN set -ex && \
+RUN apt-get update && \
+    apt-get -y install libpq-dev zlib1g-dev gcc && \
+    pip install psycopg2 && \
+    set -ex && \
     pip install --upgrade pip && \
     pip install -r /tmp/requirements.txt && \
     rm -rf /root/.cache/
