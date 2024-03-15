@@ -7,7 +7,7 @@ DEBUG = True
 SECRET_KEY = env("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: define the correct hosts in production!
-ALLOWED_HOSTS = [".herokuapp.com", "localhost", "127.0.0.1", "jinglepotpublishing.com", "0.0.0.0"]
+ALLOWED_HOSTS = ["urchin-app-xeyed.ondigitalocean.app", "localhost", "127.0.0.1", "jinglepotpublishing.com", "0.0.0.0"]
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
